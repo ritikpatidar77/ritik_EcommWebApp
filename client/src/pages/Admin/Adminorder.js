@@ -11,7 +11,7 @@ import { Select } from "antd";
 const { Option } = Select;
 
 const Adminorder = () => {
-  const [status, SetStatus] = useState([
+  const [status] = useState([
     "Not Processed",
     "Processing",
     "Shipped",
@@ -19,7 +19,7 @@ const Adminorder = () => {
     "Delivered",
   ]);
   const [Orders, SetOrders] = useState([]);
-  const [auth, SetAuth] = useAuth();
+  const [auth] = useAuth();
   const Navigate = useNavigate();
   async function GetOrders() {
     try {
@@ -123,6 +123,7 @@ const Adminorder = () => {
                           <img
                             src={`https://ecomwebapp.onrender.com/api/v1/product/get-productPhoto/${p._id}`}
                             className="card-img-top"
+                            alt="Product image"
                             style={{ height: "100%", width: "10rem" }}
                           />
                         </div>

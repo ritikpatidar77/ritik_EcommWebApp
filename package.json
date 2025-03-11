@@ -14,7 +14,7 @@
   },
   "scripts": {
     "install": "npm install --prefix server && npm install --prefix client",
-    "build": "npm run build --prefix client",
+    "build": "CI=false react-scripts build",
     "start": "node server/server.js",
     "dev": "concurrently \"npm start --prefix server\" \"npm start --prefix client\""
   }

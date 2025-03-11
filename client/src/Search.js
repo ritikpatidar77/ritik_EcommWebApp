@@ -4,7 +4,7 @@ import { useSearch } from "./context/Searchcontext";
 import { useNavigate } from "react-router-dom";
 const Search = () => {
   const Navigate = useNavigate();
-  const [values, SetValues] = useSearch();
+  const [values] = useSearch();
   return (
     <Layout>
       <div className="d-flex flex-column text-center mt-3">

@@ -10,7 +10,7 @@ import { Badge } from "antd";
 import { IoCartSharp } from "react-icons/io5";
 function Header() {
   const [auth, setAuth] = useAuth();
-  const [cart, setCart] = useCart();
+  const [cart] = useCart();
   const category = Usecategory();
   function HandleLogout() {
     setAuth({

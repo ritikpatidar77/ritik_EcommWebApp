@@ -124,6 +124,7 @@ const CartPage = () => {
                         <img
                           src={`https://ecomwebapp.onrender.com/api/v1/product/get-productPhoto/${p._id}`}
                           className="card-img-top"
+                          alt="Product image" 
                           style={{ height: "100%", width: "10rem" }}
                         />
                       </div>
